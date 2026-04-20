@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with TravelVista. We'd love to help you plan your next trip. Contact us via form, phone, or email.">
+  <title>Contact Us — TravelVista</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-paper-plane"></i><span>TravelVista</span></a>
+      <div class="nav-links" id="navLinks">
+        <span class="mobile-menu-header"><i class="fas fa-paper-plane"></i>TravelVista</span>
+        <span class="mobile-menu-desc">Your gateway to unforgettable travel experiences around the globe.</span>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="destinations.html"><i class="fas fa-map-marker-alt"></i> Destinations</a>
+        <a href="packages.html"><i class="fas fa-suitcase"></i> Packages</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="packages.html" class="nav-cta"><i class="fas fa-bolt"></i> Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1920&h=600&fit=crop" alt="Contact Banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>Contact Us</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO CARDS -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="contact-info-cards reveal">
+        <div class="contact-info-card">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Our Office</h4>
+          <p>42 Travel Plaza, Connaught Place,<br>New Delhi, India 110001</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <h4>Call Us</h4>
+          <p>+91 98765 43210<br>+91 11 2345 6789</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email Us</h4>
+          <p>hello@travelvista.com<br>support@travelvista.com</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fas fa-clock"></i></div>
+          <h4>Working Hours</h4>
+          <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + MAP -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full Name *</label>
+              <input type="text" id="contactName" placeholder="Enter your full name" required>
+              <span class="error-msg">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" placeholder="Enter your email" required>
+              <span class="error-msg">Please enter a valid email address</span>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" placeholder="Tell us about your travel plans or queries..." required></textarea>
+              <span class="error-msg">Please enter your message</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <h4>Message Sent Successfully!</h4>
+            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="reveal">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.6743782093455!2d77.21753767550444!3d28.632732675661657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1702900000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy"
+              title="TravelVista Office Location">
+            </iframe>
+          </div>
+          <div style="margin-top: 30px;">
+            <div class="vm-card" style="text-align: left;">
+              <h3 style="margin-bottom: 16px;"><i class="fas fa-comments" style="color: var(--primary); margin-right: 8px;"></i>Frequently Asked Questions</h3>
+              <div style="margin-bottom: 16px;">
+                <strong style="color: var(--text-primary);">How do I book a package?</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">Browse our packages page, select your preferred package, and click "Book Now" to start the booking process.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <strong style="color: var(--text-primary);">What is your cancellation policy?</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">Most packages offer free cancellation up to 7 days before departure. Check individual package details for specific policies.</p>
+              </div>
+              <div>
+                <strong style="color: var(--text-primary);">Do you offer travel insurance?</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">Yes! We partner with leading insurance providers to offer comprehensive travel insurance for all our packages.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fas fa-paper-plane"></i> TravelVista</h3>
+          <p>Your gateway to unforgettable travel experiences. We craft personalized journeys that turn your travel dreams into reality.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Top Destinations</h4><ul><li><a href="#">Bali, Indonesia</a></li><li><a href="#">Paris, France</a></li><li><a href="#">Maldives</a></li><li><a href="#">Swiss Alps</a></li><li><a href="#">Santorini, Greece</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-map-marker-alt"></i><span>42 Travel Plaza, Connaught Place,<br>New Delhi, India 110001</span></li><li><i class="fas fa-phone"></i><span>+91 98765 43210</span></li><li><i class="fas fa-envelope"></i><span>hello@travelvista.com</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelVista. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for travelers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about TravelVista — our mission, vision, and the passionate team behind your dream vacations.">
+  <title>About Us — TravelVista</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-paper-plane"></i><span>TravelVista</span></a>
+      <div class="nav-links" id="navLinks">
+        <span class="mobile-menu-header"><i class="fas fa-paper-plane"></i>TravelVista</span>
+        <span class="mobile-menu-desc">Your gateway to unforgettable travel experiences around the globe.</span>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="destinations.html"><i class="fas fa-map-marker-alt"></i> Destinations</a>
+        <a href="packages.html"><i class="fas fa-suitcase"></i> Packages</a>
+        <a href="about.html" class="active"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="packages.html" class="nav-cta"><i class="fas fa-bolt"></i> Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1920&h=600&fit=crop" alt="About Banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>About TravelVista</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>About Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="about-intro reveal">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=400&fit=crop" alt="Travel team planning">
+        </div>
+        <div class="about-text">
+          <h2>We Make Travel Dreams Come True</h2>
+          <p>Founded in 2014, TravelVista has grown from a small travel desk in New Delhi to one of India's most trusted travel agencies. Our passion lies in creating unforgettable travel experiences that combine adventure, comfort, and cultural immersion.</p>
+          <p>With over 50,000 happy travelers and counting, we've built our reputation on personalized service, transparent pricing, and an unwavering commitment to making every trip extraordinary. From exotic beach getaways to thrilling mountain expeditions, we handle every detail so you can focus on making memories.</p>
+          <p>Our team of experienced travel experts has collectively explored over 100 countries, giving us firsthand knowledge to craft the perfect itinerary for every type of traveler.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">What Drives Us</span>
+        <h2>Our Mission & Vision</h2>
+        <p>Building bridges between dreamers and destinations</p>
+      </div>
+      <div class="vision-mission reveal">
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To democratize world travel by offering curated, affordable, and seamless travel experiences. We believe everyone deserves to explore the world, and we're committed to making that possible through innovative technology, local partnerships, and personalized service.</p>
+        </div>
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To become the most trusted and loved travel platform globally, where every journey begins with a spark of inspiration and ends with a lifetime of memories. We envision a world where borders disappear and cultures connect through the joy of travel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Happy Travelers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Destinations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1,200+</div>
+          <div class="stat-label">Tour Packages</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Our People</span>
+        <h2>Meet the Team</h2>
+        <p>The passionate minds behind your unforgettable journeys</p>
+      </div>
+      <div class="team-grid" id="teamGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Why Us</span>
+        <h2>Why Choose TravelVista?</h2>
+        <p>Here's what sets us apart from the rest</p>
+      </div>
+      <div class="vision-mission reveal" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>100% Secure</h3>
+          <p>Your payments and personal information are protected with bank-grade security and encryption.</p>
+        </div>
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-tag"></i></div>
+          <h3>Best Price Guarantee</h3>
+          <p>We match or beat any competitor's price. Find it cheaper elsewhere? We'll refund the difference.</p>
+        </div>
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is always available to assist you before, during, and after your trip.</p>
+        </div>
+        <div class="vm-card">
+          <div class="icon"><i class="fas fa-undo"></i></div>
+          <h3>Easy Cancellation</h3>
+          <p>Plans changed? No worries. Enjoy flexible cancellation policies on most bookings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Join 50,000+ Happy Travelers</h2>
+        <p>Start planning your dream vacation today with TravelVista.</p>
+        <div class="cta-buttons">
+          <a href="packages.html" class="btn btn-white btn-lg"><i class="fas fa-suitcase"></i> Browse Packages</a>
+          <a href="contact.html" class="btn btn-accent btn-lg"><i class="fas fa-phone"></i> Talk to Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fas fa-paper-plane"></i> TravelVista</h3>
+          <p>Your gateway to unforgettable travel experiences. We craft personalized journeys that turn your travel dreams into reality.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Top Destinations</h4><ul><li><a href="#">Bali, Indonesia</a></li><li><a href="#">Paris, France</a></li><li><a href="#">Maldives</a></li><li><a href="#">Swiss Alps</a></li><li><a href="#">Santorini, Greece</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-map-marker-alt"></i><span>42 Travel Plaza, Connaught Place,<br>New Delhi, India 110001</span></li><li><i class="fas fa-phone"></i><span>+91 98765 43210</span></li><li><i class="fas fa-envelope"></i><span>hello@travelvista.com</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelVista. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for travelers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Render team cards on About page
+    document.addEventListener('DOMContentLoaded', () => {
+      const teamGrid = document.getElementById('teamGrid');
+      if (teamGrid) {
+        teamGrid.innerHTML = TEAM.map(member => `
+          <div class="team-card reveal">
+            <div class="team-image">
+              <img src="${member.avatar}" alt="${member.name}" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>${member.name}</h3>
+              <p class="role">${member.role}</p>
+              <p>${member.bio}</p>
+            </div>
+          </div>
+        `).join('');
+        // re-observe reveals
+        document.querySelectorAll('.reveal').forEach(el => {
+          if (window.revealObserver) window.revealObserver.observe(el);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

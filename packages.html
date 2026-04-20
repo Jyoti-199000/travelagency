@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and book amazing travel packages with TravelVista. Filter by price, duration, and category.">
+  <title>Packages — TravelVista</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-paper-plane"></i><span>TravelVista</span></a>
+      <div class="nav-links" id="navLinks">
+        <span class="mobile-menu-header"><i class="fas fa-paper-plane"></i>TravelVista</span>
+        <span class="mobile-menu-desc">Your gateway to unforgettable travel experiences around the globe.</span>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="destinations.html"><i class="fas fa-map-marker-alt"></i> Destinations</a>
+        <a href="packages.html" class="active"><i class="fas fa-suitcase"></i> Packages</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="packages.html" class="nav-cta"><i class="fas fa-bolt"></i> Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&h=600&fit=crop" alt="Packages Banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>Travel Packages</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Packages</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="filters-bar">
+    <div class="container">
+      <div class="filters-wrapper">
+        <div class="filter-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search packages..." id="pkgSearch">
+        </div>
+        <div class="filter-row">
+          <select class="filter-select" id="pkgPrice">
+            <option value="all">All Prices</option>
+            <option value="0-20000">Under ₹20,000</option>
+            <option value="20000-50000">₹20,000 - ₹50,000</option>
+            <option value="50000-100000">₹50,000 - ₹1,00,000</option>
+            <option value="100000-999999">Above ₹1,00,000</option>
+          </select>
+          <select class="filter-select" id="pkgDuration">
+            <option value="all">All Durations</option>
+            <option value="1-4">1–4 Days</option>
+            <option value="5-6">5–6 Days</option>
+            <option value="7-15">7+ Days</option>
+          </select>
+          <select class="filter-select" id="pkgSort">
+            <option value="popular">Most Popular</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES GRID -->
+  <section class="section">
+    <div class="container">
+      <p class="results-count" id="pkgResultsCount"></p>
+      <div class="packages-grid" id="packagesGrid">
+        <!-- Filled by JS -->
+      </div>
+      <div class="no-results" id="pkgNoResults" style="display:none;">
+        <i class="fas fa-search"></i>
+        <h3>No packages found</h3>
+        <p>Try adjusting your search or filters</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Need a Custom Package?</h2>
+        <p>We'll tailor-make a trip that fits your budget and preferences perfectly.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-white btn-lg"><i class="fas fa-phone"></i> Request Custom Trip</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fas fa-paper-plane"></i> TravelVista</h3>
+          <p>Your gateway to unforgettable travel experiences. We craft personalized journeys that turn your travel dreams into reality.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Packages</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Top Destinations</h4><ul><li><a href="#">Bali, Indonesia</a></li><li><a href="#">Paris, France</a></li><li><a href="#">Maldives</a></li><li><a href="#">Swiss Alps</a></li><li><a href="#">Santorini, Greece</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Info</h4><ul class="footer-contact"><li><i class="fas fa-map-marker-alt"></i><span>42 Travel Plaza, Connaught Place,<br>New Delhi, India 110001</span></li><li><i class="fas fa-phone"></i><span>+91 98765 43210</span></li><li><i class="fas fa-envelope"></i><span>hello@travelvista.com</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelVista. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for travelers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Booking Preview</h3>
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="modalCancel">Cancel</button>
+        <button class="btn btn-primary" id="modalConfirm"><i class="fas fa-check"></i> Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/packages.js"></script>
+</body>
+</html>

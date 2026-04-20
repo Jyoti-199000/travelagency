@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TravelVista - Discover your dream destination with premium travel packages, flights, and hotel bookings worldwide.">
+  <title>TravelVista — Explore the World in Style</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <i class="fas fa-paper-plane"></i>
+        <span>TravelVista</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <!-- <span class="mobile-menu-header"><i class="fas fa-paper-plane"></i>TravelVista</span> -->
+        <span class="mobile-menu-desc">Your gateway to unforgettable travel experiences around the globe.</span>
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="destinations.html"><i class="fas fa-map-marker-alt"></i> Destinations</a>
+        <a href="packages.html"><i class="fas fa-suitcase"></i> Packages</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="packages.html" class="nav-cta"><i class="fas fa-bolt"></i> Book Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <!-- Slides injected by JS -->
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 id="heroTitle">Discover Your Dream Destination</h1>
+      <p id="heroSubtitle">Explore 500+ handpicked destinations worldwide with the best deals</p>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <div class="search-tabs">
+          <button class="search-tab active" data-tab="packages">
+            <i class="fas fa-suitcase-rolling"></i> Packages
+          </button>
+          <button class="search-tab" data-tab="flights">
+            <i class="fas fa-plane"></i> Flights
+          </button>
+          <button class="search-tab" data-tab="hotels">
+            <i class="fas fa-hotel"></i> Hotels
+          </button>
+        </div>
+        <div class="search-form" id="searchForm">
+          <div class="search-field">
+            <label>Destination</label>
+            <input type="text" placeholder="Where do you want to go?" id="heroSearch">
+          </div>
+          <div class="search-field">
+            <label>Travel Date</label>
+            <input type="date" id="heroDate">
+          </div>
+          <div class="search-field">
+            <label>Travelers</label>
+            <select id="heroTravelers">
+              <option value="1">1 Traveler</option>
+              <option value="2" selected>2 Travelers</option>
+              <option value="3">3 Travelers</option>
+              <option value="4">4 Travelers</option>
+              <option value="5">5+ Travelers</option>
+            </select>
+          </div>
+          <button class="search-btn" id="heroSearchBtn">
+            <i class="fas fa-search"></i> Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="50000">0+</div>
+          <div class="stat-label">Happy Travelers</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="500">0+</div>
+          <div class="stat-label">Destinations</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="1200">0+</div>
+          <div class="stat-label">Tour Packages</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-count="12">0+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR DESTINATIONS ===== -->
+  <section class="section" id="popularDestinations">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Top Picks</span>
+        <h2>Popular Destinations</h2>
+        <p>Handpicked destinations loved by thousands of travelers worldwide</p>
+      </div>
+      <div class="destinations-grid" id="homeDestinationsGrid">
+        <!-- Skeleton loaders -->
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div></div></div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="destinations.html" class="btn btn-outline btn-lg">
+          Explore All Destinations <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PACKAGES ===== -->
+  <section class="section" style="background: var(--white);" id="featuredPackages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Best Deals</span>
+        <h2>Featured Travel Packages</h2>
+        <p>Curated packages with unbeatable prices and unforgettable experiences</p>
+      </div>
+      <div class="packages-grid" id="homePackagesGrid">
+        <!-- Skeleton loaders -->
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div><div class="skeleton skeleton-text"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div><div class="skeleton skeleton-text"></div></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton-image"></div><div class="skeleton-body"><div class="skeleton skeleton-text lg"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text sm"></div><div class="skeleton skeleton-text"></div></div></div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="packages.html" class="btn btn-primary btn-lg">
+          View All Packages <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Reviews</span>
+        <h2>What Our Travelers Say</h2>
+        <p>Real stories from real travelers who explored the world with us</p>
+      </div>
+      <div class="testimonials-slider reveal" id="testimonialsSlider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+      <div class="testimonial-nav reveal">
+        <button id="testimonialPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button id="testimonialNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Get exclusive deals and early access to the best travel packages. Start your journey today!</p>
+        <div class="cta-buttons">
+          <a href="packages.html" class="btn btn-white btn-lg">
+            <i class="fas fa-suitcase"></i> Explore Packages
+          </a>
+          <a href="contact.html" class="btn btn-accent btn-lg">
+            <i class="fas fa-phone"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><i class="fas fa-paper-plane"></i> TravelVista</h3>
+          <p>Your gateway to unforgettable travel experiences. We craft personalized journeys that turn your travel dreams into reality.</p>
+          <div class="footer-social">
+            <!-- <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="https://x.com/JyotiKumar93980?t=Ka1VSPHma91QJVRBXYGWHg&s=09" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/x_jyoti_ak?igsh=a3JqNXY1MGZjNmgw" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=gOLtP8imceA&t=3s" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/jyoti-ranjan-1b44a3326" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Destinations</h4>
+          <ul>
+            <li><a href="destinations.html">Bali, Indonesia</a></li>
+            <li><a href="destinations.html">Paris, France</a></li>
+            <li><a href="destinations.html">Maldives</a></li>
+            <li><a href="destinations.html">Swiss Alps</a></li>
+            <li><a href="destinations.html">Santorini, Greece</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i><span>42 Travel Plaza, Connaught Place,<br>New Delhi, India 110001</span></li>
+            <li><i class="fas fa-phone"></i><span>+91 98765 43210</span></li>
+            <li><i class="fas fa-envelope"></i><span>hello@travelvista.com</span></li>
+            <li><i class="fas fa-clock"></i><span>Mon - Sat: 9:00 AM - 8:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelVista. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for travelers worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Booking Preview</h3>
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Filled by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="modalCancel">Cancel</button>
+        <button class="btn btn-primary" id="modalConfirm"><i class="fas fa-check"></i> Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
